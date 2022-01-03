@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script src="tabs.js" defer></script>
+    <title>Destination</title>
+</head>
+<body>
+    <header class="primary--header flex container">
+        <div class="header--logo">
+          <img src="assets/shared/logo.svg" alt=" space tourism logo" class="logo">
+        </div>
+    
+        
+    
+        <nav>
+          <ul class="primary-navigation flex" data-visible="false" id="primary-navigation" >
+            <button class="movile--nav--close nav-toggle" aria-expanded="false" ></button>
+            <a href="index.html"><li class="ff-sans-cond text-white uppercase active " >00 Home</li></a>
+            <a href="destination.html"><li class="ff-sans-cond text-white uppercase " >01 Destination</li></a>
+            <a href=""><li class="ff-sans-cond text-white uppercase " >02 Crew</li></a>
+            <a href=""><li class="ff-sans-cond text-white uppercase " >03 Technology</li></a>
+          </ul>
+        </nav>
+    
+        <button class="movile--nav--toggle nav-toggle" aria-expanded="false" ></button>
+        
+      </header>
+
+      <div class="container grid--container--home text-center" >
+          <div>
+              <p> <span>01</span> Pick your destination </p>
+              <img id="dest-img" src="" alt="space tourism destination moon">
+
+          </div>
+
+          <div class="app-info">
+            <div class="tabs">
+                <ul class="uppercase ff-sans-cond text-accent">
+                    <li class="tab active" >Moon</li>
+                    <li class="tab" >Mars</li>
+                    <li class="tab" >Europa</li>
+                    <li class="tab" >Titan</li>
+                </ul>
+            </div>
+
+            <h1> <span  class="ff-serif text-white uppercase fs-900 fw-100" id='dest-title'>Moon </span> </h1>
+            <p id='dest-desc' ></p>
+
+                <div class="grid--info">
+                    <div>
+                        <p class="ff-sans-cond text-accent uppercase" id='dest-info-distance' >Avg. distance</p>
+                        <p class="ff-serif ff-white fw-100 fs-600 uppercase" id='dest-distance' ></p>
+                    </div>
+
+                    <div>
+                        <p class="ff-sans-cond text-accent uppercase " id='dest-info-est' >Est. travel time</p>
+                        <p class="ff-serif ff-white fw-100 fs-600 uppercase" id='dest-est' ></p>
+                    </div>
+                </div>
+          </div>
+      </div>
+</body>
+</html>
