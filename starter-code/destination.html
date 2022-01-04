@@ -12,7 +12,7 @@
   <script src="tabs.js" defer></script>
     <title>Destination</title>
 </head>
-<body>
+<body class="destination-page">
     <header class="primary--header flex container">
         <div class="header--logo">
           <img src="assets/shared/logo.svg" alt=" space tourism logo" class="logo">
@@ -23,8 +23,8 @@
         <nav>
           <ul class="primary-navigation flex" data-visible="false" id="primary-navigation" >
             <button class="movile--nav--close nav-toggle" aria-expanded="false" ></button>
-            <a href="index.html"><li class="ff-sans-cond text-white uppercase active " >00 Home</li></a>
-            <a href="destination.html"><li class="ff-sans-cond text-white uppercase " >01 Destination</li></a>
+            <a href="index.html"><li class="ff-sans-cond text-white uppercase  " >00 Home</li></a>
+            <a href="destination.html"><li class="ff-sans-cond text-white uppercase active " >01 Destination</li></a>
             <a href=""><li class="ff-sans-cond text-white uppercase " >02 Crew</li></a>
             <a href=""><li class="ff-sans-cond text-white uppercase " >03 Technology</li></a>
           </ul>
@@ -36,14 +36,14 @@
 
       <div class="container grid--container--home text-center" >
           <div>
-              <p> <span>01</span> Pick your destination </p>
-              <img id="dest-img" src="" alt="space tourism destination moon">
+              <p class="sub-header uppercase letter-spacing-2"> <span class="text-accent" >01 </span> Pick your destination </p>
+              <img class="dest-img" id="dest-img" src="" alt="space tourism destination moon">
 
           </div>
 
           <div class="app-info">
             <div class="tabs">
-                <ul class="uppercase ff-sans-cond text-accent">
+                <ul class="uppercase ff-sans-cond text-accent flex">
                     <li class="tab active" >Moon</li>
                     <li class="tab" >Mars</li>
                     <li class="tab" >Europa</li>
@@ -52,16 +52,16 @@
             </div>
 
             <h1> <span  class="ff-serif text-white uppercase fs-900 fw-100" id='dest-title'>Moon </span> </h1>
-            <p id='dest-desc' ></p>
+            <p class="text-accent line-h-25" id='dest-desc' ></p>
 
-                <div class="grid--info">
+                <div class="grid--info grid">
                     <div>
-                        <p class="ff-sans-cond text-accent uppercase" id='dest-info-distance' >Avg. distance</p>
+                        <p class="ff-sans-cond text-accent uppercase letter-spacing-3" id='dest-info-distance' >Avg. distance</p>
                         <p class="ff-serif ff-white fw-100 fs-600 uppercase" id='dest-distance' ></p>
                     </div>
 
                     <div>
-                        <p class="ff-sans-cond text-accent uppercase " id='dest-info-est' >Est. travel time</p>
+                        <p class="ff-sans-cond text-accent uppercase letter-spacing-3 " id='dest-info-est' >Est. travel time</p>
                         <p class="ff-serif ff-white fw-100 fs-600 uppercase" id='dest-est' ></p>
                     </div>
                 </div>

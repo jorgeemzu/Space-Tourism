@@ -25,6 +25,7 @@ tabs.forEach((tab, index) =>
     tab.addEventListener('click', (e) =>{
 
         tabDestination(index)
+        
 
     })
 )
@@ -37,5 +38,11 @@ function tabDestination(index){
     destTitle.innerHTML = destinations.name
     destDescription.innerHTML = destinations.description
     destImg.src = destinations.images.png
+
+
+    tabs.forEach( (tab) => {tab.classList.remove('active')})
+    tabs[index].classList.add('active')
+
+    
     
 }

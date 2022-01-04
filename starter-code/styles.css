@@ -35,6 +35,7 @@ body{
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
    
 }
 
@@ -108,7 +109,7 @@ span{
 }
 
 .container{
-    padding: 1em 2em;
+    padding: 1em .5em;
     max-width: 80rem;
     margin: 0 auto;
 }
@@ -121,6 +122,8 @@ span{
     display: flex;
 }
 
+
+
 .marg--top--2em{
     margin-top: 2em;
 }
@@ -129,7 +132,15 @@ span{
     line-height: 25px;
 }
 
+p span{
+    display: inline-block;
+    margin-right: .5em;
+    opacity: .6;
+}
 
+.destination-page{
+    background-image: url(assets/destination/background-destination-mobile.jpg);
+}
 
 .home{
     background-image: url(assets/home/background-home-mobile.jpg);
@@ -138,8 +149,11 @@ span{
 .primary--header{
     justify-content: space-between;
     position: relative;
+    padding: 2em;
    
 }
+
+
 
 
 
@@ -199,12 +213,56 @@ span{
 }
 
 .grid--container--home p{
-    max-width: 70vw;
+    max-width: 85vw;
     margin: 0 auto;
 }
 
+.tab{
+    cursor: pointer;
+    padding: .5em 0;
+    margin-bottom: 2em;
+}
+
+.tab.active{
+    border-bottom: solid 3px hsl( var(--clr-white) )
+}
+
+.tabs ul{
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.dest-img{
+    
+    width: 60vw;
+    margin: 2em auto;
+    max-width: 400px;
+}
+
+.grid--info{
+    padding-top: 2em;
+    margin-top: 4em;
+    border-top: solid 1px hsl( var(--clr-light) /.3 );
+}
+
+.grid--info .ff-sans-cond{
+    margin-bottom: 1em;
+}
+
+.grid--info div{
+    margin-bottom: 2em;
+}
+
+
 
 @media only screen and (min-width: 663px){
+
+    .destination-page{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+    }
 
 
     .home{
@@ -234,7 +292,10 @@ span{
     }
 
     
-
+    .grid--info{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
 
     /* nav::after{
         position: absolute;
@@ -339,7 +400,7 @@ span{
     }
 
     .grid--container--home h1 span{
-        font-size: clamp(1rem, var(--fs-800), 6rem);
+        font-size: clamp(1rem, var(--fs-800), 5rem);
     }
     
 }
@@ -348,6 +409,10 @@ span{
 @media only screen and (min-width: 950px){
     .home{
         background-image: url(assets/home/background-home-desktop.jpg);
+    }
+
+    .destination-page{
+        background-image: url(assets/destination/background-destination-desktop.jpg);
     }
 
     header::after{
@@ -395,6 +460,10 @@ span{
 
     .large-btn{
         font-size: 2em;
+    }
+
+    .tabs ul{
+        margin-left: 0;
     }
 }
 
