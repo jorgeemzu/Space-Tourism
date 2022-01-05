@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
   <script src="tabs.js" defer></script>
-    <title>Destination</title>
+    <title>Crew</title>
 </head>
-<body class="destination-page">
+<body class="crew-page">
     <header class="primary--header flex container">
         <div class="header--logo">
           <img src="assets/shared/logo.svg" alt=" space tourism logo" class="logo">
@@ -24,8 +24,8 @@
           <ul class="primary-navigation flex" data-visible="false" id="primary-navigation" >
             <button class="movile--nav--close nav-toggle" aria-expanded="false" ></button>
             <a href="index.html"><li class="ff-sans-cond text-white uppercase  " >00 Home</li></a>
-            <a href="destination.html"><li class="ff-sans-cond text-white uppercase active " >01 Destination</li></a>
-            <a href="crew.html"><li class="ff-sans-cond text-white uppercase " >02 Crew</li></a>
+            <a href="destination.html"><li class="ff-sans-cond text-white uppercase  " >01 Destination</li></a>
+            <a href="crew.html"><li class="ff-sans-cond text-white uppercase active " >02 Crew</li></a>
             <a href=""><li class="ff-sans-cond text-white uppercase " >03 Technology</li></a>
           </ul>
         </nav>
@@ -35,13 +35,13 @@
       </header>
 
       <div class="container grid--container--home dest-container text-center" >
-          <div>
-              <p class="dest-sub-header ff-sans-cond uppercase letter-spacing-2"> <span class="text-accent" >01 </span> Pick your destination </p>
-              <img class="dest-img" id="dest-img" src="" alt="space tourism destination moon">
 
-          </div>
 
-          <div class="app-info">
+        <div class="app-info">
+            <p class=" ff-sans-cond uppercase letter-spacing-2"> <span class="text-accent" >01 </span> Pick your destination </p>
+            <h2 class="crew-role uppercase ff-serif fw-100 fs-500 text-accent" id='crew-role' ></h2>
+            <h1 class="crew-name uppercase ff-serif fw-100 fs-800 text-white" id="crew-name" ></h1>
+            <p class="crew-bio ff-sans" ></p>
             <div class="tabs">
                 <ul class="uppercase ff-sans-cond text-accent flex">
                     <li class="tab active" >Moon</li>
@@ -50,22 +50,21 @@
                     <li class="tab" >Titan</li>
                 </ul>
             </div>
-
+  
             <h1 class="ff-serif text-white uppercase fs-800 fw-100" id='dest-title'> Moon  </h1>
             <p class="text-accent line-h-25" id='dest-desc' ></p>
+  
+            
+          </div>  
 
-                <div class="grid--info grid">
-                    <div>
-                        <p class="ff-sans-cond text-accent uppercase letter-spacing-3" id='dest-info-distance' >Avg. distance</p>
-                        <p class="ff-serif ff-white fw-100 fs-600 uppercase" id='dest-distance' ></p>
-                    </div>
+        <div>
+            
+            <img class="dest-img" id="dest-img" src="" alt="space tourism destination moon">
 
-                    <div>
-                        <p class="ff-sans-cond text-accent uppercase letter-spacing-3 " id='dest-info-est' >Est. travel time</p>
-                        <p class="ff-serif ff-white fw-100 fs-600 uppercase" id='dest-est' ></p>
-                    </div>
-                </div>
-          </div>
-      </div>
+        </div>
+
+        
+    </div>
+    
 </body>
 </html>

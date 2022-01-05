@@ -21,6 +21,7 @@
     --fs-700: 3.5rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
+    --fs-450: 1.50rem;
     --fs-400: 0.875rem;
 
     --fw-100: 100;
@@ -146,6 +147,10 @@ p span{
     background-image: url(assets/home/background-home-mobile.jpg);
 }
 
+.crew-page{
+    background-image: url(assets/crew/background-crew-mobile.jpg);
+}
+
 .primary--header{
     justify-content: space-between;
     position: relative;
@@ -221,6 +226,12 @@ p span{
     cursor: pointer;
     padding: .5em 0;
     margin-bottom: 2em;
+    border-bottom: solid 3px transparent;
+    transition: 1s border-bottom ;
+}
+
+.tab:hover{
+    border-bottom: solid 3px hsl( var(--clr-light) / .5 )
 }
 
 .tab.active{
@@ -232,7 +243,7 @@ p span{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 280px;
 }
 
 .dest-img{
@@ -267,6 +278,10 @@ p span{
 
     .home{
         background-image: url(assets/home/background-home-tablet.jpg);
+    }
+
+    .crew-page{
+        background-image: url(assets/crew/background-crew-tablet.jpg);
     }
 
     nav{
@@ -399,8 +414,9 @@ p span{
         font-size: var(--fs-400);
     }
 
-    .grid--container--home h1 span{
-        font-size: clamp(1rem, var(--fs-800), 5rem);
+     .app-info h1{
+        /* font-size: clamp(1rem, var(--fs-700), 5rem); */
+        font-size: var(--fs-700);
     }
     
 }
@@ -413,6 +429,10 @@ p span{
 
     .destination-page{
         background-image: url(assets/destination/background-destination-desktop.jpg);
+    }
+
+    .crew-page{
+        background-image: url(assets/crew/background-crew-desktop.jpg);
     }
 
     header::after{
@@ -454,9 +474,23 @@ p span{
         align-items: end;
     }
 
-    h1{
-        margin-bottom: 1em;
+    .grid--container--home.dest-container{
+        justify-items: center;
+        align-items: flex-start;
     }
+
+    .dest-container{
+        position: relative;
+    }
+
+    .dest-sub-header{
+        position: absolute;
+        left: 0;
+        top: -50px;
+        font-size: var(--fs-450);
+    }
+
+
 
     .large-btn{
         font-size: 2em;
